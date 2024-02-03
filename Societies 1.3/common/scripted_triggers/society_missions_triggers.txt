@@ -1,0 +1,26 @@
+﻿mission_recruitment_is_society_valid = {
+	OR = {
+		flag:$SOCIETY$ = flag:society_scholars
+		flag:$SOCIETY$ = flag:society_prowess
+		flag:$SOCIETY$ = flag:society_religious
+		flag:$SOCIETY$ = flag:society_demonic
+	}
+}
+
+mission_sacrifice_is_society_valid = {
+	OR = {
+		flag:$SOCIETY$ = flag:society_demonic
+	}
+}
+
+mission_conversion_is_society_valid = {
+	OR = {
+		flag:$SOCIETY$ = flag:society_religious
+	}
+}
+
+mission_duel_is_society_valid = {
+	OR = {
+		flag:$SOCIETY$ = flag:society_prowess
+	}
+}

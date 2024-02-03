@@ -1,0 +1,55 @@
+﻿is_in_society = {
+	has_variable = $SOCIETY$_member
+}
+
+is_rank_one_in_society = {
+	has_variable = society_rank_1
+}
+
+is_at_least_rank_one_in_society = {
+	OR = {
+		has_variable = society_rank_1
+		has_variable = society_rank_2
+		has_variable = society_rank_3
+		has_variable = society_rank_4
+	}
+}
+
+is_rank_two_in_society = {
+	has_variable = society_rank_2
+}
+
+is_at_least_rank_two_in_society = {
+	OR = {
+		has_variable = society_rank_2
+		has_variable = society_rank_3
+		has_variable = society_rank_4
+	}
+}
+
+is_rank_three_in_society = {
+	has_variable = society_rank_3
+}
+
+is_at_least_rank_three_in_society = {
+	OR = {
+		has_variable = society_rank_3
+		has_variable = society_rank_4
+	}
+}
+
+is_rank_four_in_society = {
+	has_variable = society_rank_4
+}
+
+is_in_any_society = {
+	has_variable = society_member
+}
+
+society_is_selected = {
+	has_variable = $SOCIETY$_selected
+}
+
+has_selected_any_society = {
+	has_variable = society_selection
+}

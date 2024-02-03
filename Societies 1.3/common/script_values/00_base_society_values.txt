@@ -1,0 +1,7 @@
+﻿society_currency_income = {
+	value = 10
+	if = { limit = { is_in_society = { SOCIETY = society_prowess } } add = society_prowess_currency_income }
+	if = { limit = { is_in_society = { SOCIETY = society_scholars } } add = society_scholars_currency_income }
+	if = { limit = { is_in_society = { SOCIETY = society_demonic } } add = society_demonic_currency_income }
+	if = { limit = { is_in_society = { SOCIETY = society_religious } } add = society_religious_currency_income }
+}

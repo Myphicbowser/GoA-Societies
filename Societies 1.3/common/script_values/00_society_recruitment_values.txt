@@ -1,0 +1,57 @@
+﻿society_prowess_recruit_value = {
+	value = 0
+	if = { limit = { scope:recipient = { has_trait = brave } } add = 8 }
+	if = { limit = { scope:recipient = { has_trait = strong } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = gallant } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = temperate } } add = 4 }
+	if = { limit = { scope:recipient = { has_trait = stubborn } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = blademaster_1 } } add = 4 }
+	if = { limit = { scope:recipient = { has_trait = blademaster_2 } } add = 8 }
+	if = { limit = { scope:recipient = { has_trait = blademaster_3 } } add = 12 }
+	if = { limit = { scope:recipient = { has_trait = craven } } subtract = 12 }
+	if = { limit = { scope:recipient = { has_trait = gluttonous } } subtract = 3 }
+	if = { limit = { scope:recipient = { has_trait = lazy } } subtract = 3 }
+}
+
+society_scholars_recruit_value = {
+	value = 0
+	if = { limit = { scope:recipient = { has_trait = diligent } } add = 8 }
+	if = { limit = { scope:recipient = { has_trait = shrewd } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = scholar } } add = 7 }
+	if = { limit = { scope:recipient = { has_trait = patient } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = content } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = calm } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = lazy } } subtract = 10 }
+	if = { limit = { scope:recipient = { has_trait = arbitrary } } subtract = 5 }
+}
+
+society_religious_recruit_value = {
+	value = 0
+	if = { limit = { scope:recipient = { has_trait = zealous } } add = 13 }
+	if = { limit = { scope:recipient = { has_trait = celibate } } add = 5 }
+	if = { limit = { scope:recipient = { has_trait = chaste } } add = 5 }
+	if = { limit = { scope:recipient = { has_trait = just } } add = 3 }
+	if = { limit = { scope:recipient = { has_trait = cynical } } subtract = 10 }
+	if = { limit = { scope:recipient = { has_trait = arbitary } } subtract = 3 }
+	if = { limit = { scope:recipient = { has_trait = lazy } } subtract = 3 }
+}
+
+society_demonic_recruit_value = {
+	value = 0
+	if = { limit = { scope:recipient = { has_trait = cynical } } add = 6 }
+	if = { limit = { scope:recipient = { is_witch_trigger = yes } } add = 10 }
+	if = { limit = { scope:recipient = { has_trait = torturer } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = wrathful } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = gluttonous } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = ambitious } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = vengeful } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = deceitful } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = sadistic } } add = 6 }
+	if = { limit = { scope:recipient = { has_trait = zealous } } subtract = 10 }
+	if = { limit = { scope:recipient = { has_trait = temperate } } subtract = 6 }
+	if = { limit = { scope:recipient = { has_trait = generous } } subtract = 6 }
+	if = { limit = { scope:recipient = { has_trait = forgiving } } subtract = 6 }
+	if = { limit = { scope:recipient = { has_trait = honest } } subtract = 6 }
+	if = { limit = { scope:recipient = { has_trait = trusting } } subtract = 6 }
+	if = { limit = { scope:recipient = { has_trait = compassionate } } subtract = 6 }
+}

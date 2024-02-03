@@ -1,0 +1,196 @@
+﻿# Called from code after history generation
+# Empty scope
+on_game_start_after_lobby = {
+	on_actions = {
+		on_monthly_generate_societies
+		on_start_society_gen
+		on_start_society_members_gen
+	}
+}
+
+on_monthly_generate_societies = {
+	effect = {
+		every_character_in_society = {
+			change_variable = {
+				name = society_currency
+				add = society_currency_income
+			}
+		}
+	}
+	on_actions = {
+		delay = { months = 1 }
+		on_monthly_generate_societies
+	}
+}
+
+on_start_society_gen = {
+	effect = {
+		global_var:dummy_male = {
+			societies_create_list = yes
+		}
+	}
+	on_actions = {
+		delay = { months = 1 }
+		on_monthly_generate_societies
+	}
+}
+
+on_start_society_members_gen = {
+	effect = {
+		every_living_character = {
+			limit = {
+				OR = {
+					faith.religion = religion:germanic_religion
+				}
+				is_adult = yes
+			}
+			random_list = {
+				90 = {}
+				10 = {
+					modifier = {
+						add = 5
+						is_female = no
+					}
+					modifier = {
+						add = -5
+						is_female = yes
+					}
+					modifier = {
+						add = 5
+						is_landed = yes
+					}
+					modifier = {
+						add = -5
+						is_landed = no
+					}
+					join_society = { SOCIETY = society_prowess }
+					select_society = { SOCIETY = society_prowess }
+				}
+			}
+		}
+		every_living_character = {
+			limit = {
+				OR = {
+					faith.religion = religion:christianity_religion
+				}
+				has_government = theocracy_government
+				is_adult = yes
+			}
+			random_list = {
+				90 = {}
+				10 = {
+					modifier = {
+						add = 10
+						is_female = no
+					}
+					modifier = {
+						add = -100
+						is_female = yes
+					}
+					modifier = {
+						add = 5
+						is_landed = yes
+					}
+					modifier = {
+						add = -5
+						is_landed = no
+					}
+					join_society = { SOCIETY = society_religious }
+					select_society = { SOCIETY = society_religious }
+				}
+			}
+		}
+		every_living_character = {
+			limit = {
+				has_trait = education_learning
+				is_adult = yes
+			}
+			random_list = {
+				99 = {}
+				1 = {
+					modifier = {
+						add = 1
+						is_landed = yes
+					}
+					modifier = {
+						add = 2
+						has_trait = scholar
+					}
+					modifier = {
+						add = -1
+						is_landed = no
+					}
+					join_society = { SOCIETY = society_scholars }
+					select_society = { SOCIETY = society_scholars }
+				}
+			}
+		}
+		every_living_character = {
+			limit = {
+				has_trait = education_intrigue
+				is_adult = yes
+			}
+			random_list = {
+				99 = {}
+				1 = {
+					modifier = {
+						add = 200
+						is_witch_trigger = yes
+					}
+					modifier = {
+						add = 2
+						has_trait = cynical
+					}
+					join_society = { SOCIETY = society_demonic }
+					select_society = { SOCIETY = society_demonic }
+				}
+			}
+		}
+		for_societies_simple = {
+			APPLY = create_leader_on_start
+		}
+	}
+}
+
+on_death = {
+	on_actions = {
+		society_member_death
+	}
+}
+
+society_member_death = {
+	effect = {
+		remove_list_global_variable = {
+			name = society_prowess_members
+			target = this
+		}
+		if = {
+			limit = { has_variable = leader_society_prowess }
+			pick_new_society_leader = { SOCIETY = society_prowess }
+		}
+		remove_list_global_variable = {
+			name = society_demonic_members
+			target = this
+		}
+		if = {
+			limit = { has_variable = leader_society_demonic }
+			pick_new_society_leader = { SOCIETY = society_demonic }
+		}
+		remove_list_global_variable = {
+			name = society_religious_members
+			target = this
+		}
+		if = {
+			limit = { has_variable = leader_society_religious }
+			pick_new_society_leader = { SOCIETY = society_religious }
+		}
+		remove_list_global_variable = {
+			name = society_scholars_members
+			target = this
+		}
+		if = {
+			limit = { has_variable = leader_society_scholars }
+			pick_new_society_leader = { SOCIETY = society_scholars }
+		}
+	}
+}

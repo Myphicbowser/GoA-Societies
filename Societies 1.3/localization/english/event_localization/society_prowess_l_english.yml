@@ -1,0 +1,13 @@
+﻿l_english:
+ society_prowess_events.1001.t:0 "Entering the Warrior Lodge"
+ society_prowess_events.1001.desc:0 "'To join our society you must win a duel,' [leader.GetTitledFirstName] says, 'if you wish to continue, you will duel [duelist_society.GetTitledFirstName].'\n[duelist_society.GetTitledFirstName] steps forward and speaks 'Don't worry scrub, I'll go easy on you.'"
+ society_prowess_events.1001.a:1 "Bring it on"
+ society_prowess_events.1001.b:1 "I've forgotten an important engagement elsewhere."
+
+ society_prowess_events.1003.t:0 "Success"
+ society_prowess_events.1003.desc:0 "'Well done,' [leader.GetTitledFirstName] says, 'Welcome to the Warrior Lodge. You have done well, but you have many challenges still ahead.'"
+ society_prowess_events.1003.a:1 "Excellent"
+
+ society_prowess_events.1004.t:0 "Failure"
+ society_prowess_events.1004.desc:0 "'Disappointing,' [leader.GetTitledFirstName] says, 'You have failed the trials for the Warrior Lodge. You can try again later, but I doubt the result will be any better.'"
+ society_prowess_events.1004.a:1 "Oh...."

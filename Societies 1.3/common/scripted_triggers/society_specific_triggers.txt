@@ -1,0 +1,30 @@
+﻿hidden_member_societies = {
+	OR = {
+		AND = {
+			flag:$SOCIETY$ = flag:society_demonic
+			NOT = {
+				has_variable = society_demonic_member
+			}
+		}
+	}
+}
+
+society_prowess_requirements = {
+	root.religion = {
+		is_in_family = rf_pagan
+	}
+}
+
+society_scholars_requirements = {
+	always = yes
+}
+
+society_religious_requirements = {
+	root.religion = {
+		is_in_family = rf_abrahamic
+	}
+}
+
+society_demonic_requirements = {
+	always = yes
+}

@@ -1,0 +1,28 @@
+﻿l_english:
+ society_mission.1001.opening:0 "My Servant, [ROOT.Char.GetTitledFirstName]"
+ society_mission.1001.desc:0 "You have served our society well in the past, and now I give you a mission. You are to recruit someone to our society. Do this, and you will be looked favorably upon by the members of our society."
+ society_mission.1001.a:1 "Very well"
+ society_mission.1001.b:1 "I unfortunately can not."
+
+ society_mission.1002.opening:0 "My Servant, [ROOT.Char.GetTitledFirstName]"
+ society_mission.1002.desc:0 "You have served our society well in the past, and now I give you a mission. You are to sacrifice someone to our masters below. Do this, and you will be looked favorably upon by the members of our society."
+ society_mission.1002.a:1 "Very well"
+ society_mission.1002.b:1 "I unfortunately can not."
+
+ society_mission.1003.opening:0 "My Servant, [ROOT.Char.GetTitledFirstName]"
+ society_mission.1003.desc:0 "You have served our society well in the past, and now I give you a mission. You are to convert someone to the true faith. Do this, and you will be looked favorably upon by the members of our society."
+ society_mission.1003.a:1 "Very well"
+ society_mission.1003.b:1 "I unfortunately can not."
+
+ society_mission.1004.opening:0 "My Servant, [ROOT.Char.GetTitledFirstName]"
+ society_mission.1004.desc:0 "You have served our society well in the past, and now I give you a mission. You are to hone your skills in a duel against a rival. Prove your mettle to us, and you will be looked favorably upon by the members of our society."
+ society_mission.1004.a:1 "Very well"
+ society_mission.1004.b:1 "I unfortunately can not."
+
+ sacrifice_mission_interaction:0 "Sacrifice a Man"
+ sacrifice_mission_interaction_desc:0 "Sacrifice someone to your dark masters below for your society."
+ sacrifice_mission_interaction_notification:0 "Sacrifices"
+
+ recruit_mission_interaction:0 "Recruit to Your Society"
+ recruit_mission_interaction_desc:0 "Recruit this person to your society."
+ recruit_mission_interaction_notification:0 "Recruited to their society"

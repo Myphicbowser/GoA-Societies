@@ -1,0 +1,5 @@
+﻿ability_poison_is_society_valid = {
+	OR = {
+		flag:$SOCIETY$ = flag:society_demonic
+	}
+}

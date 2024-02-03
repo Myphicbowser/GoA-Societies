@@ -1,0 +1,13 @@
+﻿l_english:
+ society_demonic_events.1001.t:0 "A Foreign Emmisarry"
+ society_demonic_events.1001.desc:0 "As you dance with a foreign emissary, [demonic_recruiter.GetSheHe] shows [demonic_recruiter.GetHerHis] arm. On it is marked a pentagram. As you look up incredulous, [demonic_recruiter.GetTitledFirstName] raises [demonic_recruiter.GetHerHis] finger to [demonic_recruiter.GetHerHis] lips and pulls you towards a side door"
+ society_demonic_events.1001.a:0 "Finally!"
+ society_demonic_events.1001.b:0 "I've forgotten an important engagement elsewhere."
+
+ society_demonic_events.1002.t:0 "The Ritual"
+ society_demonic_events.1002.desc:0 "As you walk into the dark underbelly of the castle, you enter a ring of hooded figures. [demonic_recruiter.GetTitledFirstName] turns to look at you and speaks, 'To join our society, you must take part in our most secret ritual.'"
+ society_demonic_events.1002.a:0 "Excellent"
+
+ society_demonic_events.1003.t:0 "Welcome"
+ society_demonic_events.1003.desc:0 "You wake up, [demonic_recruiter.GetTitledFirstName] laying beside you. You have only a vague memory of the night and the ritual, most of it lost in a haze of pleasure. You remember one thing for sure, you are now in the Demonics."
+ society_demonic_events.1003.a:0 "Perfect..."

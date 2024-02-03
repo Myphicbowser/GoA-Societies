@@ -1,0 +1,71 @@
+﻿society_prowess_currency_income = {
+	value = 0
+	if = { limit = { has_trait = brave } add = 5 }
+	if = { limit = { has_trait = strong } add = 5 }
+	if = { limit = { has_trait = gallant } add = 5 }
+	if = { limit = { has_trait = temperate } add = 3 }
+	if = { limit = { has_trait = stubborn } add = 3 }
+	if = { limit = { has_trait = blademaster_1 } add = 4 }
+	if = { limit = { has_trait = blademaster_2 } add = 8 }
+	if = { limit = { has_trait = blademaster_3 } add = 12 }
+	if = { limit = { has_trait = education_martial_1 } add = 3 }
+	if = { limit = { has_trait = education_martial_2 } add = 6 }
+	if = { limit = { has_trait = education_martial_3 } add = 9 }
+	if = { limit = { has_trait = education_martial_4 } add = 12 }
+	if = { limit = { has_trait = craven } subtract = 10 }
+	if = { limit = { has_trait = gluttonous } subtract = 3 }
+	if = { limit = { has_trait = lazy } subtract = 3 }
+}
+
+society_scholars_currency_income = {
+	value = 0
+	if = { limit = { has_trait = diligent } add = 5 }
+	if = { limit = { has_trait = shrewd } add = 5 }
+	if = { limit = { has_trait = scholar } add = 7 }
+	if = { limit = { has_trait = patient } add = 3 }
+	if = { limit = { has_trait = calm } add = 3 }
+	if = { limit = { has_trait = physician_1 } add = 4 }
+	if = { limit = { has_trait = physician_2 } add = 8 }
+	if = { limit = { has_trait = physician_3 } add = 12 }
+	if = { limit = { has_trait = education_learning_1 } add = 3 }
+	if = { limit = { has_trait = education_learning_2 } add = 6 }
+	if = { limit = { has_trait = education_learning_3 } add = 9 }
+	if = { limit = { has_trait = education_learning_4 } add = 12 }
+	if = { limit = { has_trait = lazy } subtract = 10 }
+	if = { limit = { has_trait = arbitrary } subtract = 5 }
+}
+
+society_religious_currency_income = {
+	value = 0
+	if = { limit = { has_trait = zealous } add = 8 }
+	if = { limit = { has_trait = theologian } add = 5 }
+	if = { limit = { has_trait = celibate } add = 5 }
+	if = { limit = { has_trait = just } add = 3 }
+	if = { limit = { has_trait = education_learning_1 } add = 3 }
+	if = { limit = { has_trait = education_learning_2 } add = 6 }
+	if = { limit = { has_trait = education_learning_3 } add = 9 }
+	if = { limit = { has_trait = education_learning_4 } add = 12 }
+	if = { limit = { has_trait = cynical } subtract = 10 }
+	if = { limit = { has_trait = arbitary } subtract = 3 }
+	if = { limit = { has_trait = lazy } subtract = 3 }
+}
+
+society_demonic_currency_income = {
+	value = 0
+	if = { limit = { has_trait = cynical } add = 5 }
+	if = { limit = { is_witch_trigger = yes } add = 5 }
+	if = { limit = { has_trait = torturer } add = 5 }
+	if = { limit = { has_trait = wrathful } add = 3 }
+	if = { limit = { has_trait = gluttonous } add = 3 }
+	if = { limit = { has_trait = ambitious } add = 3 }
+	if = { limit = { has_trait = vengeful } add = 3 }
+	if = { limit = { has_trait = deceitful } add = 3 }
+	if = { limit = { has_trait = sadistic } add = 3 }
+	if = { limit = { has_trait = zealous } subtract = 10 }
+	if = { limit = { has_trait = temperate } subtract = 3 }
+	if = { limit = { has_trait = generous } subtract = 3 }
+	if = { limit = { has_trait = forgiving } subtract = 3 }
+	if = { limit = { has_trait = honest } subtract = 3 }
+	if = { limit = { has_trait = trusting } subtract = 3 }
+	if = { limit = { has_trait = compassionate } subtract = 3 }
+}

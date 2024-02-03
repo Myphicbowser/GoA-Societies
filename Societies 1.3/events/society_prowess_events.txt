@@ -1,0 +1,97 @@
+﻿# Written by Caden335
+
+namespace = society_prowess_events
+
+society_prowess_events.1001 = {
+	type = character_event
+	title = society_prowess_events.1001.t
+	desc = society_prowess_events.1001.desc
+	left_portrait = {
+		character = root
+		animation = bold
+	}
+	right_portrait = {
+		character = scope:duelist_society
+		animation = bold
+	}
+	lower_center_portrait = {
+		character = scope:leader
+		animation = bold
+	}
+	theme = skull
+
+	immediate = {
+		random_in_global_list = {
+			variable = society_prowess_members
+			save_scope_as = duelist_society
+		}
+		random_in_global_list = {
+			variable = society_prowess_members
+			limit = { has_variable = leader_society_prowess }
+			save_scope_as = leader
+		}
+	}
+
+	# You are the attacker, default
+	option = {
+		name = society_prowess_events.1001.a
+
+		configure_start_single_combat_effect = {
+			SC_INITIATOR = root
+			SC_ATTACKER = root
+			SC_DEFENDER = scope:duelist_society
+			FATALITY = no
+			FIXED = no
+			LOCALE = army_camp
+			OUTPUT_EVENT = society_prowess_events.1002
+			INVALIDATION_EVENT = society_prowess_events.1004	#In a real event, this would obviously be a different even to the output.
+		}
+	}
+
+	# Actually, never mind
+	option = {
+		name = society_prowess_events.1001.b
+	}
+}
+
+society_prowess_events.1002 = {
+	hidden = yes
+
+	immediate = {
+		single_combat_clean_shirtlessness_effect = {
+			ATTACKER = root
+			DEFENDER = scope:duelist_society	
+		}
+		if = {
+			limit = { scope:sc_victor = root }
+			scope:sc_victor = {
+				trigger_event = society_prowess_events.1003
+			}
+		}
+		else = {
+			scope:sc_loser = {
+				trigger_event = society_prowess_events.1004
+			}
+		}
+	}
+}
+
+society_prowess_events.1003 = {
+	type = character_event
+	title = society_prowess_events.1003.t
+	desc = society_prowess_events.1003.desc
+	left_portrait = {
+		character = root
+		animation = bold
+	}
+	right_portrait = {
+		character = scope:duelist_society
+		animation = fear
+	}
+	theme = skull
+
+	option = {
+		name = society_prowess_events.1003.a
+		join_society = { SOCIETY = society_prowess }
+	}
+}
