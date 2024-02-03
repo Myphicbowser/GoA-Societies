@@ -6,5 +6,7 @@ tags={
 	"Fixes"
 	"Utilities"
 }
-name="GoA Societies"
+name="GoA Societies Module"
+picture="thumbnail.png"
 supported_version="1.3.0"
+path= "mod\goa-societies"
