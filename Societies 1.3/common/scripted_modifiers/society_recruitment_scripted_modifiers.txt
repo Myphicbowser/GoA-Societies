@@ -1,6 +1,0 @@
-﻿society_recruitment_modifier = {
-	modifier = {
-		add = 100
-		$SOCIETY$_recruit_value > 11
-	}
-}

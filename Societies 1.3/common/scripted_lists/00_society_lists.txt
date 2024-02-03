@@ -1,5 +1,0 @@
-﻿character_without_society_list = { base = living_character conditions = { NOT = { has_variable_list = all_societies_list } } }
-
-character_in_society = { base = living_character conditions = { is_in_any_society = yes } }
-
-character_not_in_society = { base = living_character conditions = { NOT = { is_in_any_society = yes } } }

@@ -1,0 +1,96 @@
+﻿# Written by Caden335
+
+namespace = society_demonic_events
+
+society_demonic_events.1001 = {
+	type = character_event
+	title = society_demonic_events.1001.t
+	desc = society_demonic_events.1001.desc
+	left_portrait = {
+		character = root
+		animation = bold
+	}
+	right_portrait = {
+		character = scope:demonic_recruiter
+		animation = bold
+	}
+	theme = skull
+
+	immediate = {
+		random_in_global_list = {
+			variable = society_demonic_members
+			limit = { sex_opposite_of = root }
+			save_scope_as = demonic_recruiter
+		}
+	}
+
+	# Time to join
+	option = {
+		name = society_demonic_events.1001.a
+		trigger_event = society_demonic_events.1002
+	}
+
+	# Actually, never mind
+	option = {
+		name = society_demonic_events.1001.b
+	}
+}
+
+society_demonic_events.1002 = {
+	type = character_event
+	title = society_demonic_events.1002.t
+	desc = society_demonic_events.1002.desc
+	left_portrait = {
+		character = root
+		animation = lustful
+	}
+	right_portrait = {
+		character = scope:demonic_recruiter
+		animation = lustful
+	}
+	theme = skull
+
+	immediate = {
+		root = {
+			add_character_flag = {
+				flag = use_stealth_clothes
+				days = 1
+			}
+		}
+		scope:demonic_recruiter = {
+			add_character_flag = {
+				flag = use_stealth_clothes
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = society_demonic_events.1002.a
+		trigger_event = society_demonic_events.1003
+	}
+}
+
+society_demonic_events.1003 = {
+	type = character_event
+	title = society_demonic_events.1003.t
+	desc = society_demonic_events.1003.desc
+	left_portrait = {
+		character = root
+		animation = lustful
+	}
+	right_portrait = {
+		character = scope:demonic_recruiter
+		animation = lustful
+	}
+	theme = skull
+
+	option = {
+		name = society_demonic_events.1003.a
+		had_sex_with_effect = {
+			CHARACTER = scope:demonic_recruiter
+			PREGNANCY_CHANCE = 10
+		}
+		join_society = { SOCIETY = society_demonic }
+	}
+}

@@ -1,0 +1,116 @@
+﻿texticon = { 
+	icon = icon_window_societies
+	iconsize = {
+		texture = "gfx/societies/maintab_societies.dds"
+		size = { 50 50 }
+		fontsize = 16
+	}
+}
+
+texticon = { 
+    icon = icon_society_prowess
+    iconsize = {
+        texture = "gfx/societies/society_prowess.dds"
+        size = { 260 260 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_society_demonic
+    iconsize = {
+        texture = "gfx/societies/society_demonic.dds"
+        size = { 260 260 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_society_religious
+    iconsize = {
+        texture = "gfx/societies/society_religious.dds"
+        size = { 260 260 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_society_scholars
+    iconsize = {
+        texture = "gfx/societies/society_scholars.dds"
+        size = { 260 260 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_small_society_prowess
+    iconsize = {
+        texture = "gfx/societies/society_prowess.dds"
+        size = { 140 140 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_small_society_demonic
+    iconsize = {
+        texture = "gfx/societies/society_demonic.dds"
+        size = { 140 140 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_small_society_religious
+    iconsize = {
+        texture = "gfx/societies/society_religious.dds"
+        size = { 140 140 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+    icon = icon_small_society_scholars
+    iconsize = {
+        texture = "gfx/societies/society_scholars.dds"
+        size = { 140 140 }
+        fontsize = 16
+    }
+}
+
+texticon = { 
+	icon = icon_ranks_society_prowess
+	iconsize = {
+		texture = "gfx/societies/society_prowess_ranks.dds"
+		size = { 115 24 }
+		fontsize = 16
+	}
+}
+
+texticon = { 
+	icon = icon_ranks_society_scholars
+	iconsize = {
+		texture = "gfx/societies/society_scholars_ranks.dds"
+		size = { 115 24 }
+		fontsize = 16
+	}
+}
+
+texticon = { 
+	icon = icon_ranks_society_religious
+	iconsize = {
+		texture = "gfx/societies/society_religious_ranks.dds"
+		size = { 115 24 }
+		fontsize = 16
+	}
+}
+
+texticon = { 
+	icon = icon_ranks_society_demonic
+	iconsize = {
+		texture = "gfx/societies/society_demonic_ranks.dds"
+		size = { 115 24 }
+		fontsize = 16
+	}
+}

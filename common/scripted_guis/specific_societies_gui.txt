@@ -1,0 +1,23 @@
+﻿society_prowess_requirement = {
+	is_shown = {
+		society_prowess_requirements = yes
+	}
+}
+
+society_scholars_requirement = {
+	is_shown = {
+		society_scholars_requirements = yes
+	}
+}
+
+society_religious_requirement = {
+	is_shown = {
+		society_religious_requirements = yes
+	}
+}
+
+society_demonic_requirement = {
+	is_shown = {
+		society_demonic_requirements = yes
+	}
+}
