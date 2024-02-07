@@ -7,7 +7,7 @@ tags={
 	"Utilities"
 }
 
-name="Societies Modules"
+name="Societies Revived"
 picture="thumbnail.png"
 supported_version="1.3.0"
-path=" mod\societies"
+path="mod\societiesrev"
